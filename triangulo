@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+void main()
+{
+    int ladoA,ladoB,ladoC;
+    printf("Escolha os 3 lados de um triangulo:\n");
+    scanf("%i %i %i",&ladoA,&ladoB,&ladoC);
+    
+    if(ladoA==ladoB==ladoC){
+    printf("Seu triangulo é um triangulo equilatero");
+    }
+    else if(ladoA==ladoB || ladoA==ladoC || ladoB==ladoC){
+    printf("Seu triangulo é um triangulo isosceles");
+    }
+    else{
+    printf("Seu triangulo é um triangulo escaleno");
+    }
+}
